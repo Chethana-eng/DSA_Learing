@@ -1,0 +1,110 @@
+4/3/25
+ds
+SINGLE LINKED LIST
+-ADT (add,remove,insert,delete,update,traverse)
+-add(adds elements in the end) 
+
+#include <iostream>
+using namespace std;
+class Node{
+public;
+string name;
+Node*ptr;
+Node(string value):name(value).ptr(nullptr){}; //Constructor
+~Node(){cout << "estructor called for"<<name<<endl}; //Destructor
+};
+int main()
+{
+Node *n1 = new Node("KMIT1");
+Node *n2 = new Node("KMIT2");
+Node *n3 = new Node("KMIT3");
+return 0;
+}
+
+
+6/3/25
+
+#include <iostream>
+using namespace std;
+class Node{
+    public:
+    string name;
+    Node*next;
+    Node(string name):name(name), next(nullptr){};
+};
+class  SingleLinkedList{
+    Node*head;
+    public:
+    SingleLinkedList(){
+        head = nullptr;
+    };
+    void add(string name){
+        Node*n = new Node(name);
+        if (head == nullptr){
+            head = n;
+            return;
+        };
+        Node*temp = head;
+        while(temp->next!=nullptr){
+            temp = temp->next;
+        };
+        temp->next = n;
+    };
+    void display(){
+        Node*j = head;
+        while(j->next != nullptr){
+            cout<<j->name<< endl;
+             j = j-> next;
+        };// j==last element
+        cout<<j->name<<endl;
+    
+    };
+    void addAfter(string newName,string m){
+        Node*nn = new Node(newName);
+        Node*temp = head;
+        //find the node
+        while(temp->name!=m){
+            temp = temp->next;
+        }
+        //new node point to next node
+        nn->next = temp->next;
+        //temp points to new node
+        temp->next = nn;
+    };
+    void display(){
+        
+    }
+    void addBefore(string newName, string m){
+        Node*nn =  new Node(newName);
+        //create 2 pointers
+        Node*temp = head;
+        Node*prev = nullptr;
+        while(temp->next!=m){
+            pre = temp;
+            temp=temp->next;
+        }
+        nn -> next = temp;
+        prev->next = nn;
+    }
+    void display(){
+        
+    }
+    void removee(){
+        
+    }
+int main(){
+    SingleLinkedList*s = new SingleLinkedList(); //object of sll
+    s->add("a");
+    s->add("b");
+    s->add("c");
+    s->add("d");
+    s->add("e");
+    s->addAfter("z","b");
+    s->display();
+};
+
+
+20/3/25
+
+stack:another form of linear ds, follows last in first out(LIFO) or (FILO) First in last out.
+real life appplications - browser, navigation , Instagram stories , call history , sms , whatsapp msgs , 

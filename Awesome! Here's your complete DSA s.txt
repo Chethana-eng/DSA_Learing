@@ -1,0 +1,12 @@
+Awesome! Here's your complete DSA setup:
+
+📅 Weekly Study Schedule (8 Weeks)
+Week	Topics	Goals
+1	Java Basics, OOP, Functions, Arrays	Solve 10 beginner problems (patterns, palindrome, Fibonacci, etc.)
+2	Strings, ArrayLists	Practice 10 string problems (reversal, frequency, anagrams)
+3	Stack, Queue	Solve 5+ problems each: Valid parentheses, NGE, sliding window
+4	Linked List	Implement and reverse lists, detect cycles, find middle node
+5	HashMap, HashSet	Solve problems like Two Sum, Group Anagrams, Frequency count
+6	Trees (BT, BST)	Inorder/Pre/Postorder, height, diameter, LCA, BST operations
+7	Recursion & Backtracking	Subsets, permutations, Sudoku, N-Queens
+8	Dynamic Programming	LCS, 0/1 Knapsack, LIS, DP on grids, memoization/tabulation
